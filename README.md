@@ -5,8 +5,26 @@ This project demonstrates how to connect to a local Milvus vector database using
 ## Prerequisites
 
 - Node.js installed
-- A running instance of Milvus (e.g., via Docker on localhost:19530)
+- Docker and Docker Compose installed
 - An OpenAI API Key
+
+## Run Milvus and Attu (Docker)
+
+You can easily start a local Milvus standalone instance along with **Attu** (the graphical admin UI for Milvus) using the provided Docker Compose file.
+
+1. Start the services in the background:
+   ```bash
+   docker compose -f milvus-standalone-docker-compose.yml up -d
+   ```
+
+2. Access the services:
+   - **Milvus Database:** `localhost:19530`
+   - **Attu UI:** Open your browser and go to [http://localhost:8000](http://localhost:8000) (Login with Milvus Address: `milvus-standalone:19530`)
+
+3. To stop the services later:
+   ```bash
+   docker compose -f milvus-standalone-docker-compose.yml down
+   ```
 
 ## Setup
 
