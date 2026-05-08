@@ -15,10 +15,10 @@ const BOOK_NAME = parse(EPUB_FILE).name;
 
 // Initialize Embeddings model
 const embeddings = new OpenAIEmbeddings({
-    apiKey: process.env.OPENAI_API_KEY, // This will be the fake key from .env
+    apiKey: process.env.OLLAMA_API_KEY, // This will be the fake key from .env
     model: process.env.EMBEDDINGS_MODEL_NAME, // This will be nomic-embed-text
     configuration: {
-        baseURL: process.env.OPENAI_BASE_URL // This will be http://localhost:11434/v1
+        baseURL: process.env.OLLAMA_BASE_URL // This will be http://localhost:11434/v1
     },
     dimensions: VECTOR_DIM
 });

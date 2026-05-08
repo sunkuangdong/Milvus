@@ -5,10 +5,10 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 export const VECTOR_DIM = 1024;
 
 const embeddings = new OpenAIEmbeddings({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.OLLAMA_API_KEY,
     model: process.env.EMBEDDINGS_MODEL_NAME,
     configuration: {
-        baseURL: process.env.OPENAI_BASE_URL
+        baseURL: process.env.OLLAMA_BASE_URL
     },
     dimensions: VECTOR_DIM
 });
