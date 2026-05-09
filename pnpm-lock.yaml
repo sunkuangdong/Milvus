@@ -23,6 +23,9 @@ importers:
       '@zilliz/milvus2-sdk-node':
         specifier: ^2.6.14
         version: 2.6.14
+      chalk:
+        specifier: ^5.6.2
+        version: 5.6.2
       "community\_epub2":
         specifier: "link:@langchain/community\_epub2"
         version: "link:@langchain/community\_epub2"
@@ -44,6 +47,9 @@ importers:
       "textsplitters\_":
         specifier: "link:@langchain/textsplitters\_"
         version: "link:@langchain/textsplitters\_"
+      zod:
+        specifier: ^4.4.3
+        version: 4.4.3
 
 packages:
 
@@ -1130,6 +1136,10 @@ packages:
   camelcase@6.3.0:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
+
+  chalk@5.6.2:
+    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
@@ -3171,6 +3181,8 @@ snapshots:
       function-bind: 1.1.2
 
   camelcase@6.3.0: {}
+
+  chalk@5.6.2: {}
 
   cliui@8.0.1:
     dependencies:
